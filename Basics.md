@@ -52,6 +52,26 @@ end)
 ```
 I don't expect you to understand this code, but it's more easy to read right now.
 
+local variables are bound to their scope, that means that if I define a variable with `local` in front of it anywhere that isn't in the root of the script, it won't be accessible by the root, to explain:
+```lua
+-- First script, we define it in the root and we can use it anywhere
+local value = true
+print(value) -- prints true
+
+local function test()
+    print(value) -- prints true, but only if `test()` is ran somewhere else.
+end
+```
+Okay cool, so then lets look at this:
+```lua
+local function test()
+    local value = true -- We decalred it inside of something, in this case the test function. This means that the variable is only accessible inside this function
+    print(value) -- will print true
+end
+
+print(value) -- will return an error! it is in the root and the value variable can't be used here!
+```
+
 
 
 ## Tables
