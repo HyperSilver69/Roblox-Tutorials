@@ -5,6 +5,6 @@ Roblox studio is a powerful game engine, but you need to know "Luau" (it's inter
 Use the Docs! A lot of events and function and useful things can be found there, check it out! https://create.roblox.com/docs
 
 ## Table of content
-* Basics
+* [Basics](https://gaganpreetkaurkalsi.netlify.app/)
 
 
