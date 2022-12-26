@@ -1,2 +1,4 @@
-# Roblox-Tutorials
-The goal of this isnt to have the most well documented tutorial, instead it's a memory check for myself
+Roblox studio is a powerful game engine, but you need to know "Luau" (it's interpretation of Lua) to be able to create things.
+
+Use the Docs! A lot of events and function and useful things can be found there, check it out! https://create.roblox.com/docs
+
