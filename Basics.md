@@ -1,7 +1,7 @@
 "What is Lua? Lua is a powerful, efficient, lightweight, embeddable scripting language. It supports procedural programming, object-oriented programming, functional programming, data-driven programming, and data description"
 
 play along! you can follow this part of the tutorial with the Lua demo environment. Link [Here](https://www.lua.org/cgi-bin/demo)
-# Defining your variables
+## Defining your variables
 An example of a variable is:
 ```lua
 local hello = "Hello"
@@ -51,3 +51,30 @@ clickDetector.MouseClick:Connect(function()
 end)
 ```
 I don't expect you to understand this code, but it's more easy to read right now.
+
+
+
+## Tables
+
+Tables store things, just like in real life! Take a look at the following code:
+```lua
+local tableWithAnEpicName = {} -- "{}" is used to let the language know that we're creating a table!
+```
+Congrats, you just created an empty table. Let's fill it up!
+```lua
+local tableWithAnEpicName = { -- opening thhe table with the open curly bracker
+      "tom","scott","peter","arnold" -- each string requires it's own set of parenthesis, you can't put undefined things (not made variables) in a table without parenthesis.
+} -- closing the table
+```
+Now that we have a table with those things, let's try to retrieve Scott out of there
+```lua
+local tableWithAnEpicName = {
+      "tom","scott","peter","arnold" 
+}
+print(tableWithAnEpicName[2])
+
+--------------------------
+Ouput:
+scott
+```
+Each element of a table (thing we store in it that's divided by a comma) has it's own numerical value inbetween the brackets, [2] calls the second one in the list. Look at the table, which one is the second? does that match the output? Play around with it.
