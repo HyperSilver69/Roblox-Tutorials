@@ -78,3 +78,16 @@ Ouput:
 scott
 ```
 Each element of a table (thing we store in it that's divided by a comma) has it's own numerical value inbetween the brackets, [2] calls the second one in the list. Look at the table, which one is the second? does that match the output? Play around with it.
+
+We'll get to this part in a bit but we can also get tables with things that we don't define outselves (with parenthesis or values):
+```lua
+local playersService = game:GetService("Players") -- get the players service, we'll get to this in a bit.
+local playerList = playersService:GetPlayers() -- Returns a table with all the players
+
+print(playerList[2]) -- Prints the 2nd player stored under the players tab in Studio
+
+--------------------------
+Output:
+player2
+```
+
