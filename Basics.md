@@ -62,7 +62,7 @@ local tableWithAnEpicName = {} -- "{}" is used to let the language know that we'
 ```
 Congrats, you just created an empty table. Let's fill it up!
 ```lua
-local tableWithAnEpicName = { -- opening thhe table with the open curly bracker
+local tableWithAnEpicName = { -- opening the table with the open curly bracker
       "tom","scott","peter","arnold" -- each string requires it's own set of parenthesis, you can't put undefined things (not made variables) in a table without parenthesis.
 } -- closing the table
 ```
